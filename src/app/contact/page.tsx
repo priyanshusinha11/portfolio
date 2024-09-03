@@ -9,7 +9,7 @@ const Contact = () => {
     <div>
       <Box
         borderRadius="1rem"
-        className="bg-gray-900 bg-opacity-80 backdrop-blur-sm text-white border border-white/[0.2] shadow-lg p-10 flex flex-col"
+        className="bg-white dark:bg-dark-color-2 text-black dark:text-white border-neutral-200 dark:border-slate-800 p-10 flex flex-col"
         containerClassName="m-auto w-[750px] max-w-[90%] h-auto md:mt-10"
       >
         <h1 className="text-2xl md:text-4xl font-bold">Get in touch with Me</h1>
