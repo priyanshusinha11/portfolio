@@ -1,4 +1,5 @@
 import { Box } from "@/components/ui/moving-border";
+import { Spotlight } from "@/components/ui/Spotlight";
 import  experiences  from "@/db/experiences";
 import { TbPointFilled } from "react-icons/tb";
 
@@ -36,6 +37,7 @@ const Experience = () => {
             </div>
           </Box>
         ))}
+        <Spotlight/>
       </div>
     </div>
   );

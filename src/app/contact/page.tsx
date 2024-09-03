@@ -1,5 +1,6 @@
 "use client"
 import { Box } from "@/components/ui/moving-border";
+import { Spotlight } from "@/components/ui/Spotlight";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
 import { ImLocation } from "react-icons/im";
@@ -71,6 +72,7 @@ const Contact = () => {
           </ul>
         </div>
       </Box>
+      <Spotlight/>
     </div>
   );
 };

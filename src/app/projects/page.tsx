@@ -1,5 +1,6 @@
 "use client"
 import ProjectCard from "@/components/ProjectCard";
+import { Spotlight } from "@/components/ui/Spotlight";
 import projects from "@/db/projects";
 
 const Project = () => {
@@ -17,6 +18,7 @@ const Project = () => {
           />
         ))}
       </div>
+      <Spotlight />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import SkillSection from "@/app/about/SkillSection";
 import AboutAvatarSVG from "@/app/about/AboutAvatarSVG";
 import { IoIosStar } from "react-icons/io";
+import { Spotlight } from "@/components/ui/Spotlight";
 
 const About = () => {
   const ACHIEVEMENTS = [
@@ -40,6 +41,7 @@ const About = () => {
       </div>
       <div className="my-10">
         <SkillSection />
+        <Spotlight/>
       </div>
     </div>
   );
