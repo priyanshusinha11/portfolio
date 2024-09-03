@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
-import { Spotlight } from "@/components/ui/Spotlight";
 import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -28,9 +28,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         > 
-        <Spotlight/>
         <Navbar/>
           <div>{children}</div>
+          <Footer/>
         </ThemeProvider>
         </main>
       </body>
