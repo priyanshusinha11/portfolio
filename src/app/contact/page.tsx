@@ -8,11 +8,13 @@ import { ImLocation } from "react-icons/im";
 const Contact = () => {
   return (
     <div>
+      <Spotlight />
       <Box
         borderRadius="1rem"
         className="bg-white dark:bg-dark-color-2 text-black dark:text-white border-neutral-200 dark:border-slate-800 p-10 flex flex-col"
         containerClassName="m-auto w-[750px] max-w-[90%] h-auto md:mt-10"
       >
+        
         <h1 className="text-2xl md:text-4xl font-bold">Get in touch with Me</h1>
         <div className="mt-10 text-lg">
           <ul>
@@ -72,7 +74,7 @@ const Contact = () => {
           </ul>
         </div>
       </Box>
-      <Spotlight/>
+      
     </div>
   );
 };

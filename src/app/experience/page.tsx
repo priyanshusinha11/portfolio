@@ -7,6 +7,7 @@ const Experience = () => {
   return (
     <div>
       <div>
+        <Spotlight />
         {experiences.map((experience, key_exp) => (
           <Box
             key={`exp_${key_exp}`}
@@ -37,7 +38,7 @@ const Experience = () => {
             </div>
           </Box>
         ))}
-        <Spotlight/>
+        
       </div>
     </div>
   );

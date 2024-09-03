@@ -14,8 +14,10 @@ const About = () => {
 
   return (
     <div className="w-[1200px] max-w-[90%] mx-auto md:mt-10">
+      <Spotlight />
       <div className="flex flex-col md:flex-row gap-4">
         <div className="md:w-[60%] flex flex-col justify-center px-8">
+          
           <h1 className="text-2xl md:text-4xl font-bold">About Me</h1>
           <p className="mt-6 text-sm md:text-base">
             Hi Everyone, I am Priyanshu Sinha from India. I have doing
@@ -41,7 +43,7 @@ const About = () => {
       </div>
       <div className="my-10">
         <SkillSection />
-        <Spotlight/>
+        
       </div>
     </div>
   );

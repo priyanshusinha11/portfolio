@@ -6,6 +6,7 @@ import projects from "@/db/projects";
 const Project = () => {
   return (
     <div className="mt-10 w-[1300px] max-w-[90%] mx-auto">
+      <Spotlight />
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 mx-auto">
         {projects.map((project, index) => (
           <ProjectCard
@@ -18,7 +19,7 @@ const Project = () => {
           />
         ))}
       </div>
-      <Spotlight />
+     
     </div>
   );
 };
