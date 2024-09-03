@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { Spotlight } from "@/components/ui/Spotlight";
+import Navbar from "@/components/Navbar/Navbar";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -28,6 +29,7 @@ export default function RootLayout({
           disableTransitionOnChange
         > 
         <Spotlight/>
+        <Navbar/>
           <div>{children}</div>
         </ThemeProvider>
         </main>
