@@ -14,6 +14,7 @@ const projects = [
             "Anonymous messaging app allowing users to receive messages anonymously via unique links. Features include email verification and AI-generated message suggestions. Full-stack - Next.js, Tailwind CSS with ShadCN UI, Database - Mongoose, AI - Gemini AI.",
         thumbnail: whisperly,
         githubLink: "https://github.com/priyanshusinha11/ama-app",
+        demoLink: "https://ama-app-beta.vercel.app/"
     },
     {
         title: "Cloudify",
@@ -21,6 +22,7 @@ const projects = [
             "SaaS application for video compression and AI-powered image cropping. Full-stack - Next.js, File Handling - Cloudinary, Database - Prisma with Neon DB, UI - Daisy UI with Tailwind CSS.",
         thumbnail: cloudify,
         githubLink: "https://github.com/priyanshusinha11/cloud-saas",
+        demoLink: "https://cloud-saas-byp11.vercel.app/"
     },
     {
         title: "YouTube-like App Backend",
@@ -35,6 +37,7 @@ const projects = [
             "Dynamic blogging platform with real-time article editing and efficient state management. Frontend - React, State Management - Redux, Backend-as-a-Service - Appwrite, Deployed on Vercel.",
         thumbnail: blog,
         githubLink: "https://github.com/priyanshusinha11/blog-app",
+        demoLink: "https://blog-it-priyanshu11.vercel.app/"
     },
     {
         title: "URL Trimmer",
@@ -42,6 +45,7 @@ const projects = [
             "URL shortener app with custom URL generation, QR code creation, and usage analytics. Frontend - React, Styling - Tailwind CSS, Navigation - React Router DOM.",
         thumbnail: urltrimmer,
         githubLink: "https://github.com/priyanshusinha11/url-trimmer",
+        demoLink: "https://url-trimmer.vercel.app/"
     },
     {
         title: "Music Academy",
@@ -49,6 +53,7 @@ const projects = [
             "Landing page for a music academy with animations and transitions. Frontend - Next.js, Animations - Framer Motion, UI - Responsive design with Tailwind CSS.",
         thumbnail: music,
         githubLink: "https://github.com/priyanshusinha11/music-academy/tree/main",
+        demoLink: "https://music-academy-blue.vercel.app/"
     },
     {
         title: "Price Wise",
@@ -56,6 +61,7 @@ const projects = [
             "Real-time price monitoring platform with dynamic price tracking and email alerts. Backend - Node.js, Cron Jobs, Email - Nodemailer, Database - MongoDB.",
         thumbnail: price,
         githubLink: "https://github.com/priyanshusinha11/pricewise11",
+        
     },
     {
         title: "Meme Generator",
@@ -63,6 +69,7 @@ const projects = [
             "Meme Generator app allowing users to overlay custom text on random meme images. Frontend - React, API Integration, State Management - React Hooks.",
         thumbnail: meme,
         githubLink: "https://github.com/priyanshusinha11/meme-generator",
+        demoLink: "https://meme-generator-byp11.vercel.app/"
     },
 ];
 

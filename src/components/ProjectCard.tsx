@@ -46,19 +46,27 @@ export default function ProjectCard({
                     </div>
                 </CardItem>
                 <div className="flex justify-between items-center mt-4">
-                    <CardItem
-                        translateZ={20}
-                        as={Link}
-                        href={demoLink || "#"}
-                        className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
-                    >
-                        Try now →
-                    </CardItem>
+                    {demoLink ? (
+                        <CardItem
+                            translateZ={20}
+                            as="a"
+                            href={demoLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white cursor-pointer"
+                        >
+                            Try now →
+                        </CardItem>
+                    ) : (
+                        <div className="px-4 py-2 rounded-xl text-xs font-normal text-gray-400 cursor-not-allowed">
+                            Demo unavailable
+                        </div>
+                    )}
                     <CardItem
                         translateZ={20}
                         as="button"
                         onClick={() => {
-                            window.open(githubLink);
+                            window.open(githubLink, "_blank", "noopener,noreferrer");
                         }}
                         className="px-4 py-2 rounded-xl bg-dark-color-2 dark:bg-white dark:text-black text-white text-xs font-bold"
                     >

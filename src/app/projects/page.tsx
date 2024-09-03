@@ -13,6 +13,7 @@ const Project = () => {
             description={project.description}
             thumbnail={project.thumbnail}
             githubLink={project.githubLink}
+            demoLink={project.demoLink}
           />
         ))}
       </div>
