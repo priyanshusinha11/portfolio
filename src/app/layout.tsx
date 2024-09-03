@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { BackgroundBeams } from "@/components/ui/background-beams";
+import { ThemeProvider } from "next-themes";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,8 +18,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}
-        <BackgroundBeams/>
+      <body className={`${inter.className} flex flex-col min-h-[100%]`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        > 
+          <div>{children}</div>
+        </ThemeProvider>
       </body>
     </html>
   );
