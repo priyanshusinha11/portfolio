@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Idevice } from "@/utils/types/Idevice";
+import { Idevice } from "@/lib/types/Idevice";
 
 const useDeviceContext = (): Idevice => {
     const currentDevice = (): Idevice => {
