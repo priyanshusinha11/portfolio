@@ -1,7 +1,6 @@
 "use client";
 import Image, { StaticImageData } from "next/image";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
-import Link from "next/link";
 
 interface IProjectCard {
     title: string;
@@ -20,17 +19,17 @@ export default function ProjectCard({
 }: IProjectCard) {
     return (
         <CardContainer className="inter-var">
-            <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-dark-color-2 dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[26rem] h-[30rem] rounded-xl p-6 border flex flex-col">
+            <CardBody className="bg-gray-900 bg-opacity-80 backdrop-blur-sm relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] border-white/[0.2] w-auto sm:w-[26rem] h-[30rem] rounded-xl p-6 border flex flex-col">
                 <CardItem
                     translateZ="50"
-                    className="text-xl font-bold text-neutral-600 dark:text-white"
+                    className="text-xl font-bold text-white"
                 >
                     {title}
                 </CardItem>
                 <CardItem
                     as="p"
                     translateZ="60"
-                    className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 flex-grow"
+                    className="text-gray-300 text-sm max-w-sm mt-2 flex-grow"
                 >
                     {description}
                 </CardItem>
@@ -53,12 +52,12 @@ export default function ProjectCard({
                             href={demoLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white cursor-pointer"
+                            className="px-4 py-2 rounded-xl text-xs font-normal text-white hover:bg-white hover:bg-opacity-10 transition-colors duration-200 cursor-pointer"
                         >
                             Try now →
                         </CardItem>
                     ) : (
-                        <div className="px-4 py-2 rounded-xl text-xs font-normal text-gray-400 cursor-not-allowed">
+                        <div className="px-4 py-2 rounded-xl text-xs font-normal text-gray-500 cursor-not-allowed">
                             Demo unavailable
                         </div>
                     )}
@@ -68,7 +67,7 @@ export default function ProjectCard({
                         onClick={() => {
                             window.open(githubLink, "_blank", "noopener,noreferrer");
                         }}
-                        className="px-4 py-2 rounded-xl bg-dark-color-2 dark:bg-white dark:text-black text-white text-xs font-bold"
+                        className="px-4 py-2 rounded-xl bg-white text-black text-xs font-bold hover:bg-opacity-90 transition-colors duration-200"
                     >
                         GitHub
                     </CardItem>

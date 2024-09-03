@@ -1,9 +1,78 @@
-import React from 'react'
+"use client"
+import { Box } from "@/components/ui/moving-border";
+import { AiOutlineMail } from "react-icons/ai";
+import { FaLinkedin, FaTwitter } from "react-icons/fa";
+import { ImLocation } from "react-icons/im";
 
-function Contact() {
+const Contact = () => {
   return (
-    <div>contact</div>
-  )
-}
+    <div>
+      <Box
+        borderRadius="1rem"
+        className="bg-gray-900 bg-opacity-80 backdrop-blur-sm text-white border border-white/[0.2] shadow-lg p-10 flex flex-col"
+        containerClassName="m-auto w-[750px] max-w-[90%] h-auto md:mt-10"
+      >
+        <h1 className="text-2xl md:text-4xl font-bold">Get in touch with Me</h1>
+        <div className="mt-10 text-lg">
+          <ul>
+            <li className="mt-6 flex items-center gap-3">
+              <div>
+                <AiOutlineMail size="1.5rem" />
+              </div>
+              <div>
+                <span className="font-semibold">Email:</span>{" "}
+                <a
+                  href="mailto:priyanshusinha.2807@gmail.com"
+                  target="_blank"
+                  className="text-blue-700 dark:text-blue-200"
+                >
+                  priyanshusinha.2807@gmail.com
+                </a>
+              </div>
+            </li>
+            <li className="mt-6 flex items-center gap-3">
+              <div>
+                <FaTwitter size="1.5rem" />
+              </div>
+              <div>
+                <span className="font-semibold">DM on Twitter:</span>{" "}
+                <a
+                  href="https://x.com/priyanshu11_"
+                  target="_blank"
+                  className="text-blue-700 dark:text-blue-200"
+                >
+                  @priyanshu11_
+                </a>
+              </div>
+            </li>
+            <li className="mt-6 flex items-center gap-3">
+              <div>
+                <FaLinkedin size="1.5rem" />
+              </div>
+              <div>
+                <span className="font-semibold">DM on LinkedIn:</span>{" "}
+                <a
+                  href="https://www.linkedin.com/in/priyanshusina11/"
+                  target="_blank"
+                  className="text-blue-700 dark:text-blue-200"
+                >
+                  @priyanshusinha11
+                </a>
+              </div>
+            </li>
+            <li className="mt-6 flex items-center gap-3">
+              <div>
+                <ImLocation size="1.5rem" />
+              </div>
+              <div>
+                <span className="font-semibold">Address:</span> Patia, Bhubaneswar, Odisha. Pin: 751024
+              </div>
+            </li>
+          </ul>
+        </div>
+      </Box>
+    </div>
+  );
+};
 
-export default Contact
+export default Contact;
