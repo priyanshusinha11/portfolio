@@ -6,10 +6,14 @@ import { usePathname } from "next/navigation";
 export function CustomLink({
     name,
     link,
+    target = "_self",
+    rel,
     className = "",
 }: {
     name: string;
     link: string;
+    target?: string;
+    rel?: string;
     className?: string;
 }) {
     const pathName = usePathname();
@@ -18,8 +22,8 @@ export function CustomLink({
         <Link
             href={link}
             className={`mx-4 relative group ${className}`}
-            target={name === "Blogs" || name === "Resume" ? "_blank" : "_self"}
-            rel={name === "Resume" ? "noopener noreferrer" : undefined} 
+            target={target}
+            rel={rel}
         >
             {name}
             <span
