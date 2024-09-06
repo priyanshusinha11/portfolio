@@ -14,7 +14,13 @@ const NavbarDesk = ({ navItems }: { navItems: INavItem[] }) => {
         <div className="w-full px-32 py-8 font-medium flex items-center justify-between">
             <div>
                 {navItems.map((item, key) => (
-                    <CustomLink key={key} name={item.name} link={item.link} />
+                    <CustomLink
+                        key={key}
+                        name={item.name}
+                        link={item.link}
+                        target={item.name === "Resume" ? "_blank" : "_self"}
+                        rel={item.name === "Resume" ? "noopener noreferrer" : undefined}
+                    />
                 ))}
             </div>
             <nav className="flex justify-center items-center flex-wrap gap-8">

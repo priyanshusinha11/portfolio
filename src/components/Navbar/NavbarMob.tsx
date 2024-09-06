@@ -111,7 +111,13 @@ const NavbarMob = ({ navItems }: { navItems: INavItem[] }) => {
                                     className="list-none space-y-6 flex flex-col ml-10"
                                 >
                                     {navItems.map((item, key) => (
-                                        <Link key={key} href={item.link} onClick={toggleMobileNav}>
+                                        <Link
+                                            key={key}
+                                            href={item.link}
+                                            onClick={toggleMobileNav}
+                                            target={item.name === "Resume" ? "_blank" : "_self"}
+                                            rel={item.name === "Resume" ? "noopener noreferrer" : undefined}
+                                        >
                                             {item.name}
                                         </Link>
                                     ))}
