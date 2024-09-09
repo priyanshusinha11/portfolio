@@ -15,7 +15,7 @@ const projects = [
             "Anonymous messaging app allowing users to receive messages anonymously via unique links. Features include email verification and AI-generated message suggestions. Full-stack - Next.js, Tailwind CSS with ShadCN UI, Database - Mongoose, AI - Gemini AI.",
         thumbnail: whisperly,
         githubLink: "https://github.com/priyanshusinha11/ama-app",
-        demoLink: "https://ama-app-beta.vercel.app/"
+        demoLink: "https://whisperly-beta.vercel.app/"
     },
     {
         title: "Cloudify",
