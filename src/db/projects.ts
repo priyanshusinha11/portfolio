@@ -6,6 +6,7 @@ import price from "@/assests/project-thumbnails/price.png";
 import urltrimmer from "@/assests/project-thumbnails/urltrimmer.png";
 import whisperly from "@/assests/project-thumbnails/whisperly.png";
 import yt from "@/assests/project-thumbnails/yt.png";
+import chat from '@/assests/project-thumbnails/chat.jpeg'
 
 const projects = [
     {
@@ -30,6 +31,13 @@ const projects = [
             "Backend for a video streaming platform with user management, video uploads, and subscription features. Security - bcrypt, JWT; Database - Mongoose with aggregate-paginate.",
         thumbnail: yt,
         githubLink: "https://github.com/priyanshusinha11/youtube-backend",
+    },
+    {
+        title: "Scalable Chat App",
+        description:
+            " A cutting- edge,real - time communication platform engineered for scalability and performance.Leveraging the power of Next.js, Node.js, Redis, PostgreSQL, Kafka, and Prisma, this application delivers a seamless and efficient user experience",
+        thumbnail: chat,
+        githubLink: "https://github.com/priyanshusinha11/chat-app",
     },
     {
         title: "BlogIt",
@@ -71,6 +79,7 @@ const projects = [
         githubLink: "https://github.com/priyanshusinha11/meme-generator",
         demoLink: "https://meme-generator-byp11.vercel.app/"
     },
+   
 ];
 
 export default projects;
