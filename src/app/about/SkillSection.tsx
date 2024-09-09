@@ -18,7 +18,7 @@ const SkillSection = () => {
     },
     {
       category: "DevOps and Tools",
-      value: "Git and GitHub, Linux, AWS, Docker, Bash, Nginx",
+      value: "Git and GitHub, Linux, AWS, Docker, Bash, Nginx, Kafka",
     },
     {
       category: "Core Computer Science Concepts",
