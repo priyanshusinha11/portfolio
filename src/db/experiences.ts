@@ -1,5 +1,18 @@
 const experiences = [
     {
+        company: "Zorbi",
+        role: "Software Developer",
+        work: [
+            "Engineered a full-stack e-commerce application using Next.js, enabling seamless product sales with real-time performance optimization, resulting in increased user engagement.",
+            "Crafted an interactive and responsive UI with Tailwind CSS, enhancing user experience and boosting overall product interaction through intuitive design elements.",
+            "Built and managed both the frontend and backend architecture, ensuring scalable, maintainable code for long-term growth and feature development.",
+            "Integrated Stripe for secure payment processing, supporting both one-time payments and subscription services, ensuring a robust and seamless checkout experience for customers.",
+            "Deployed the application on Vercel, leveraging modern cloud infrastructure for high availability, scalability, and optimal performance across global regions."
+        ],
+        joining_date: "September 2024",
+        ending_date: "Currently working"
+    },
+    {
         company: "Saptang Labs",
         role: "Fullstack SDE Intern",
         work: [
@@ -13,6 +26,6 @@ const experiences = [
         joining_date: "March 2024",
         ending_date: "June 2024"
     },
-]
+];
 
 export default experiences;
