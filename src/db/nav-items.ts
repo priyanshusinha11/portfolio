@@ -22,7 +22,7 @@ const navItems = [
     },
     {
         name: "Resume",
-        link: "https://drive.google.com/file/d/1UkO-jb62g1_Jqm09O_3k9cM5IfYNs9li/view?usp=sharing"
+        link: "https://drive.google.com/file/d/1zJHRt4rs8uRV-rEarC6RZagZZ9NuDVW3/view?usp=sharing"
     }
 ]
 
