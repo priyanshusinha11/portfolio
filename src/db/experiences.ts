@@ -10,7 +10,7 @@ const experiences = [
             "Deployed the application on Vercel, leveraging modern cloud infrastructure for high availability, scalability, and optimal performance across global regions."
         ],
         joining_date: "September 2024",
-        ending_date: "Currently working"
+        ending_date: "Present"
     },
     {
         company: "Saptang Labs",
