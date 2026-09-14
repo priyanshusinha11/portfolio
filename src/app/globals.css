@@ -52,54 +52,36 @@ body {
   animation: caret-blink 1.06s steps(1, end) infinite;
 }
 
-/* REPEAT 4 [FD 100 RT 90] */
-@keyframes draw {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes walk {
-  to {
-    offset-distance: 100%;
-  }
-}
-
-@keyframes turtle-in {
-  to {
-    opacity: 1;
-  }
-}
-
-.logo-path {
-  stroke-dasharray: 480;
-  stroke-dashoffset: 480;
-  animation: draw 3.2s linear 0.5s forwards;
-}
-
-.logo-turtle {
-  offset-path: path("M 20 20 H 140 V 140 H 20 Z");
-  offset-distance: 0%;
-  offset-rotate: auto;
-  opacity: 0;
-  animation:
-    turtle-in 0.2s linear 0.5s forwards,
-    walk 3.2s linear 0.5s forwards;
-}
-
 @media (prefers-reduced-motion: reduce) {
   .caret {
     animation: none;
   }
 
-  .logo-path {
-    stroke-dashoffset: 0;
-    animation: none;
-  }
+}
 
-  .logo-turtle {
-    opacity: 1;
-    offset-distance: 100%;
+/* the three bars in the audio button. flat when paused, bouncing when playing. */
+@keyframes eq {
+  0%,
+  100% {
+    height: 20%;
+  }
+  50% {
+    height: 100%;
+  }
+}
+
+.eq-bar {
+  height: 20%;
+  transition: height 0.2s ease;
+}
+
+.eq-bar[data-playing] {
+  animation: eq 0.9s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .eq-bar[data-playing] {
+    height: 100%;
     animation: none;
   }
 }
