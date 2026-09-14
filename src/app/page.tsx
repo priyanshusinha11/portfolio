@@ -57,8 +57,8 @@ export default function Home() {
           Triplespeed
         </a>
         , a consumer app studio that takes ideas from zero to millions of users.
-        Spending my days building a 50+ engineer team and the products 100M+
-        people use.
+        Spending my days building a 50-person engineering team and the products
+        100M+ people use.
       </p>
 
       <div className="mt-14">
