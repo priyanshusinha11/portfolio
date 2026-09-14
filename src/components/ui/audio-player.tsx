@@ -13,8 +13,8 @@ export type Track = {
 // change rather than a rewrite.
 export const PLAYLIST: Track[] = [
   {
-    title: "",
-    artist: "",
+    title: "july",
+    artist: "iloveflowers!",
     url: "/audio/theme.mp3",
   },
 ];
