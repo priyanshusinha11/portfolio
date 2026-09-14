@@ -1,16 +1,30 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "next-themes";
-import Navbar from "@/components/Navbar/Navbar";
-import Footer from "@/components/Footer";
 
+const plexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-mono",
+});
 
-const inter = Inter({ subsets: ["latin"] });
+const plexSans = IBM_Plex_Sans({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-sans",
+});
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://priyanshusinha.com"),
   title: "Priyanshu Sinha",
-  description: "Priyanshu Sinha, Software Developer, KIIT Bhubaneswar Undergraduate",
+  description: "Building consumer brands that reach millions of people.",
+  openGraph: {
+    title: "Priyanshu Sinha",
+    description: "Building consumer brands that reach millions of people.",
+    url: "https://priyanshusinha.com",
+    siteName: "Priyanshu Sinha",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -20,19 +34,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} flex flex-col min-h-[100%]`}>
-        <main className="min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.05]">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        > 
-        <Navbar/>
-          <div>{children}</div>
-          <Footer/>
-        </ThemeProvider>
-        </main>
+      <body className={`${plexMono.variable} ${plexSans.variable}`}>
+        {children}
       </body>
     </html>
   );
